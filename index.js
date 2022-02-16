@@ -4,7 +4,8 @@ const wadl = require('./wadl/utilities.js')
 const system = require('./common/utilities.js')
                      
 try {
-  system.exec(`java -v`)
+  system.exec(`java -version`)
+  system.exec(`mvn -v`)
   //const path = core.getInput('path');
   //const time = (new Date()).toTimeString();
   //core.setOutput("time", time);
