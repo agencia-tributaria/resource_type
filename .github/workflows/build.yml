@@ -19,6 +19,7 @@ jobs:
           cache: maven
       - run: |
           mvn --batch-mode package
+          tree
           mkdir -p docs
           mv target/resource_type-1.0-SNAPSHOT.jar docs/build.jar
       - uses: EndBug/add-and-commit@v8
