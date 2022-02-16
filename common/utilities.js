@@ -2,7 +2,7 @@ const child = require('child_process')
 
 module.exports = {
   exec: function(command) {
-    child.exec("ls -la", (error, stdout, stderr) => {
+    child.exec(command, (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`)
         } else if (stderr) {
