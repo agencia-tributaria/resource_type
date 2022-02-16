@@ -1,5 +1,7 @@
 module.exports = {
-  log: function () {
+  log: function (path, existing) {
     console.log("Hello, World!")
+    console.log("path: " + path)
+    console.log("update: " + existing)
   }
 }
