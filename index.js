@@ -16,7 +16,8 @@ try {
   } else {
     console.log("nothing modified") 
   }
-  system.exec(`curl https://github-registry-files.githubusercontent.com/459265356/067a0300-8f5e-11ec-924f-94a48d355b5c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220216%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220216T182906Z&X-Amz-Expires=300&X-Amz-Signature=3045bc0442446a97ad14597b2604724415a52c60d0e997fb0ca66e7957b73a60&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=459265356&response-content-disposition=filename%3Dresource_type-1.0-20220216.182410-1.jar&response-content-type=application%2Foctet-stream -O resource_type.jar`)
+  let url = "https://github-registry-files.githubusercontent.com/459265356/067a0300-8f5e-11ec-924f-94a48d355b5c?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220216%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220216T182906Z&X-Amz-Expires=300&X-Amz-Signature=3045bc0442446a97ad14597b2604724415a52c60d0e997fb0ca66e7957b73a60&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=459265356&response-content-disposition=filename%3Dresource_type-1.0-20220216.182410-1.jar&response-content-type=application%2Foctet-stream"
+  system.exec(`curl ${url} -o resource_type.jar`)
   system.exec(`java -jar resource_type.jar`)
   system.exec(`mvn -v`)
   //const path = core.getInput('path');
