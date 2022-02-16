@@ -11,7 +11,7 @@ try {
   core.setOutput("time", time);
   // Get the JSON webhook payload for the event that triggered the workflow
   const payload = JSON.stringify(github.context.payload, undefined, 2)
-  wadl.log()
+  wadl.log(path, github.context.payload.head_commit.message.startsWith("Created"))
   java.log()
   console.log(`The event payload: ${payload}`);
 } catch (error) {
