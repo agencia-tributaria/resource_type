@@ -11,7 +11,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>es.aeat.resourcetype.Build</mainClass>
+              <mainClass>es.aeat.wadl.Build</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>
