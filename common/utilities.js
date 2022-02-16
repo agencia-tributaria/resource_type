@@ -1,4 +1,4 @@
-const run = require("child_process");
+const { run } = require("child_process");
 
 module.exports = {
   exec: function(command) {
