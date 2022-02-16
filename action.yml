@@ -2,7 +2,7 @@ name: 'resource_type'
 description: 'Expandir WADL y crear los paquetes Maven correspondientes'
 inputs:
   changes:
-    description: 'Cambios realizados en el 'commit' que provocó la ejecución de esta acción'
+    description: 'Cambios realizados en el commit que provocó la ejecución de esta acción'
     required: true
 outputs:
   time:
