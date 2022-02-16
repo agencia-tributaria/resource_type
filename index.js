@@ -1,6 +1,5 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
-const java = require('./java/generate.js')
 const wadl = require('./wadl/utilities.js')
                      
 try {
@@ -8,8 +7,7 @@ try {
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
   const payload = JSON.stringify(github.context.payload, undefined, 2)
-  wadl.log(path, github.context.payload.head_commit.message.startsWith("Update"))
-  java.log()
+  wadl.pushed(path, github.context.payload.head_commit.message.startsWith("Update"))
   console.log(`The event payload: ${payload}`);
 } catch (error) {
   core.setFailed(error.message);
