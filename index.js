@@ -1,6 +1,6 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
-const java = require('java/generate.js')
+const java = require('./java/generate.js')
                      
 try {
   // `who-to-greet` input defined in action metadata file
