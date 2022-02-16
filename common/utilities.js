@@ -1,8 +1,8 @@
-const exec = require("child_process");
+const run = require("child_process");
 
 module.exports = {
-  exec: function (command) {
-    exec("ls -la", (error, stdout, stderr) => {
+  exec: function(command) {
+    run("ls -la", (error, stdout, stderr) => {
         if (error) {
             console.log(`error: ${error.message}`)
         } else if (stderr) {
@@ -13,6 +13,6 @@ module.exports = {
     })
   },
   spawn: function(command, args) {
-      return spawn(command, args)
+      return run(command, args)
   }
 }
