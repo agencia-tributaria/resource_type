@@ -17,7 +17,10 @@ jobs:
           java-version: '8'
           distribution: 'adopt'
           cache: maven
-      - run: mvn --batch-mode package
+      - run: |
+          mvn --batch-mode package
+          mkdir -p docs
+          mv target/resource_type-1.0-SNAPSHOT.jar docs/build.jar
       - uses: EndBug/add-and-commit@v8
         with:
           add: target/resource_type-1.0-SNAPSHOT.jar
