@@ -17,7 +17,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>agencia-tributaria.resource_type.Build</mainClass>
+              <mainClass>es.aeat.rest.resource.type.Build</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>
