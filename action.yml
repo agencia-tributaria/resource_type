@@ -1,11 +1,11 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'resource_type'
+description: 'Expandir WADL y crear los paquetes Maven correspondientes'
 inputs:
-  path:  # id of input
+  path:
     description: 'resource_type WADL file path'
     required: true
 outputs:
-  time: # id of output
+  time:
     description: 'The time we greeted you'
 runs:
   using: 'node16'
