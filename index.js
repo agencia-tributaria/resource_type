@@ -4,7 +4,7 @@ const wadl = require('./wadl/utilities.js')
 const system = require('./common/utilities.js')
                      
 try {
-  console.log("input: " + core.getInput('path'))
+  console.log("input: " + core.getInput('changes'))
   system.exec(`java -version`)
   system.exec(`mvn -v`)
   //const path = core.getInput('path');
