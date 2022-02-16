@@ -17,7 +17,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>es.aeat.rest.resource.type.Build</mainClass>
+              <mainClass>es.aeat.resourcetype.Build</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>
