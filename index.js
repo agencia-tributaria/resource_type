@@ -4,7 +4,7 @@ const wadl = require('./wadl/utilities.js')
 const system = require('./common/utilities.js')
                      
 try {
-  system.exec(`echo "Hello, World! (exec)"`)
+  system.exec(`java -v`)
   const path = core.getInput('path');
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
