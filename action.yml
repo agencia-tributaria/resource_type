@@ -1,12 +1,12 @@
 name: 'resource_type'
 description: 'Expandir WADL y crear los paquetes Maven correspondientes'
 inputs:
-  path:
-    description: 'resource_type WADL file path'
+  changes:
+    description: 'Cambios realizados en el 'commit' que provocó la ejecución de esta acción'
     required: true
 outputs:
   time:
-    description: 'The time we greeted you'
+    description: 'Momento en el que se ejecuta la acción'
 runs:
   using: 'node16'
   main: 'index.js'
