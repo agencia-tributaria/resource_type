@@ -1,1 +1,5 @@
-console.log("Hello, Java World!")
+module.exports = {
+  log: function () {
+    console.log("Hello, Java World!")
+  }
+};
