@@ -1,7 +1,15 @@
 module.exports = {
-  log: function (path, existing) {
-    console.log("Hello, World!")
-    console.log("path: " + path)
-    console.log("update: " + existing)
+  pushed: function (path, existing) {
+    if (existing) {
+      updated(path)
+    } else {
+      created(path)
+    }
   }
+}
+function updated(path) {
+  console.log("updated: " + path)
+}
+function created(path) {
+  console.log("created: " + path)
 }
