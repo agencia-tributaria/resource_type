@@ -51,7 +51,7 @@
   
   <repositories>
     <repository>
-      <id>es.aeat.repositories.maven</id>
+      <id>github</id>
       <url>https://maven.pkg.github.com/agencia-tributaria/*</url>
     </repository>
   </repositories>
