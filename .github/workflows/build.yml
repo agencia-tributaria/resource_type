@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          token: ${{ READ_PACKAGES }}
+          token: ${{ secrets.READ_PACKAGES }}
       - uses: actions/setup-java@v2
         with:
           java-version: '8'
