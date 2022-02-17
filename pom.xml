@@ -14,39 +14,29 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>copy-dependencies</id>
-            <phase>prepare-package</phase>
-            <goals>
-                <goal>copy-dependencies</goal>
-            </goals>
-            <configuration>
-                <outputDirectory>
-                    ${project.build.directory}/libs
-                </outputDirectory>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
+          <artifactId>maven-assembly-plugin</artifactId>
           <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-jar-plugin</artifactId>
-          <version>3.2.2</version>
-          <configuration>
-            <includes>
-              <include>**</include>
-            </includes>
-            <archive>
-              <manifest>
-                <addClasspath>true</addClasspath>
-                <classpathPrefix>libs/</classpathPrefix>
-                <mainClass>es.aeat.wadl.Build</mainClass>
-              </manifest>
-            </archive>
-          </configuration>
+          <version>2.4.1</version>
+          <executions>
+              <execution>
+                  <id>make-executable-jar-with-dependencies</id>
+                  <phase>package</phase>
+                  <goals>
+                      <goal>single</goal>
+                  </goals>
+                  <configuration>
+                      <archive>
+                          <manifest>
+                              <addClasspath>true</addClasspath>
+                              <mainClass>es.aeat.wadl.Build</mainClass>
+                          </manifest>
+                      </archive>
+                      <descriptorRefs>
+                          <descriptorRef>jar-with-dependencies</descriptorRef>
+                      </descriptorRefs>
+                  </configuration>
+              </execution>
+          </executions>
       </plugin>
     </plugins>
   </build>
