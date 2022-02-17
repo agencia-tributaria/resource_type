@@ -1,9 +1,6 @@
 name: 'resource_type'
 description: 'Expandir WADL y crear los paquetes Maven correspondientes'
 inputs:
-  token:
-    description: 'Token de acceso en modo lectura a los paquetes maven de la organización'
-    required: true
   added:
     description: 'Ficheros añadidos en el commit que provocó la ejecución de esta acción'
     required: true
