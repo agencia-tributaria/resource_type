@@ -1,7 +1,10 @@
 package es.aeat.wadl;
 
+import java.util.logging.Logger;
+
 public class Build {
   public static void main(String[] args) {
-    System.out.println("Hello, World! (Main)");
+    System.err.println("Hello, World!");
+    Logger.getGlobal().server("Hello, World!");
   }
 }
