@@ -50,7 +50,7 @@
   
   <repositories>
     <repository>
-      <id>read-packages</id>
+      <id>es.aeat.repositories.maven</id>
       <url>https://maven.pkg.github.com/agencia-tributaria/*</url>
     </repository>
   </repositories>
