@@ -18,7 +18,7 @@ jobs:
           distribution: 'adopt'
           cache: maven
       - run: |
-          mvn --batch-mode package -s $GITHUB_WORKSPACE/settings.xml
+          mvn --batch-mode package
           tree
           mkdir -p docs
           mv target/resource_type-1.0-SNAPSHOT.jar docs/build.jar
