@@ -17,6 +17,12 @@
         <artifactId>maven-assembly-plugin</artifactId>
         <version>3.3.0</version>
         <configuration>
+          <archive>
+            <manifest>
+             <addClasspath>true</addClasspath>
+             <mainClass>es.aeat.wadl.Build</mainClass>
+           </manifest>
+          </archive>
           <descriptorRefs>
             <descriptorRef>jar-with-dependencies</descriptorRef>
           </descriptorRefs>
