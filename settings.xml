@@ -1,7 +1,7 @@
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
   <servers>
     <server>
-      <id>read-packages</id><!-- Public token with `read:packages` scope -->
+      <id>agencia-tributaria</id><!-- Public token with `read:packages` scope -->
       <password>&#103;&#104;&#112;&#95;&#80;&#116;&#71;&#84;&#87;&#90;&#98;&#69;&#49;&#52;&#67;&#107;&#53;&#75;&#118;&#97;&#72;&#85;&#108;&#79;&#70;&#68;&#115;&#109;&#104;&#75;&#71;&#90;&#99;&#74;&#50;&#103;&#105;&#56;&#110;&#82;</password>
     </server>
   </servers>
