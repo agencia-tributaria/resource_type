@@ -24,6 +24,6 @@ jobs:
           mv target/resource_type-1.0-SNAPSHOT.jar docs/build.jar
       - uses: EndBug/add-and-commit@v8
         with:
-          add: target/resource_type-1.0-SNAPSHOT.jar
+          add: docs/build.jar
           default_author: github_actions
 
