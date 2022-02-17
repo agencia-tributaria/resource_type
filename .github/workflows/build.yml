@@ -19,7 +19,7 @@ jobs:
       - run: |
           mvn --batch-mode package
           mkdir -p docs
-          mv target/resource_type-1.0-SNAPSHOT-assembly.jar docs/build.jar
+          mv target/resource_type-1.0-SNAPSHOT-jar-with-dependencies.jar docs/build.jar
       - uses: EndBug/add-and-commit@v8
         with:
           add: docs/build.jar
