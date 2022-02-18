@@ -4,6 +4,7 @@ const wadl = require('./wadl/utilities.js')
 const system = require('./common/utilities.js')
                      
 try {
+  system.exec(`tree`)
   let added = core.getInput('added')
   if (added) {
     console.log("added: " + added) 
