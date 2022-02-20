@@ -14,7 +14,7 @@
   </build>
   <repositories>
     <repository>
-      <id>agencia-tributaria</id>
+      <id>archetype</id>
       <url>https://maven.pkg.github.com/agencia-tributaria/entidad</url>
     </repository>
   </repositories>
