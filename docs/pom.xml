@@ -1,0 +1,26 @@
+<project>
+  <modelVersion>4.0.0</modelVersion> 
+  <groupId>undefined</groupId>
+  <artifactId>undefined</artifactId>
+  <version>undefined</version>
+  <plugins>
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-archetype-plugin</artifactId>
+          <version>3.2.2-SNAPSHOT</version>
+      </plugin>
+  </plugins>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>downstream-repository</id>
+      <url>https://maven.pkg.github.com/softalks/maven_archetype</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </pluginRepository>
+    <pluginRepository>
+      <id>central</id>
+      <url>https://repo1.maven.org/maven2</url>
+    </pluginRepository>
+  </pluginRepositories>
+</project>
