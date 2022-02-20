@@ -12,9 +12,14 @@
         </plugin>
     </plugins>
   </build>
+  <repositories>
+    <repository>
+      <id>agencia-tributaria</id>
+      <url>https://maven.pkg.github.com/agencia-tributaria/entidad</url>
+    </repository>
   <pluginRepositories>
     <pluginRepository>
-      <id>downstream-repository</id>
+      <id>softalks</id>
       <url>https://maven.pkg.github.com/softalks/maven_archetype</url>
       <snapshots>
         <enabled>true</enabled>
