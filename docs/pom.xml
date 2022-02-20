@@ -3,6 +3,7 @@
   <groupId>undefined</groupId>
   <artifactId>undefined</artifactId>
   <version>undefined</version>
+  <packaging>pom</packaging>
   <build>
     <plugins>
         <plugin>
