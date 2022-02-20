@@ -17,6 +17,7 @@
       <id>agencia-tributaria</id>
       <url>https://maven.pkg.github.com/agencia-tributaria/entidad</url>
     </repository>
+  </repositories>
   <pluginRepositories>
     <pluginRepository>
       <id>softalks</id>
