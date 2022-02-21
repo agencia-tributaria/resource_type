@@ -17,6 +17,9 @@
     <repository>
       <id>archetype</id>
       <url>https://maven.pkg.github.com/agencia-tributaria/entidad</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
     </repository>
   </repositories>
   <pluginRepositories>
