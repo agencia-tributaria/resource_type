@@ -1,3 +1,16 @@
-<hello>
-  <world/>
-</hello>
+<root>
+    <foo>
+        <bar>
+            <baz>10</baz>
+            <qux>NO</qux>
+        </bar>
+        <bar>
+            <baz>20</baz>
+            <qux>YES</qux>
+        </bar>
+        <bar>
+            <baz>30</baz>
+            <qux>NO</qux>
+        </bar>
+    </foo>
+</root>
